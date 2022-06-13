@@ -1,0 +1,42 @@
+{
+  "name": "insomnia-plugin-es-aws4-request",
+  "version": "0.0.1-alpha.1",
+  "description": "insomnia plugin elasticseach aws4 request",
+  "main": "src/plugin.js",
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "author": "VEBER Arnaud <https://github.com/VEBERArnaud>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VEBERArnaud/insomnia-plugin-es-aws4-request"
+  },
+  "keywords": [
+    "insomnia",
+    "plugin",
+    "AWS",
+    "elasticsearch"
+  ],
+  "insomnia": {
+    "name": "es-aws4-request",
+    "displayName": "ES AWS4 Request",
+    "description": "ElasticSearch AWS4 Request",
+    "publisher": {
+      "name": "VEBER Arnaud <https://github.com/VEBERArnaud>",
+      "icon": "https://avatars.githubusercontent.com/u/5168814"
+    }
+  },
+  "dependencies": {
+    "@aws-crypto/sha256-js": "^2.0.1",
+    "@aws-sdk/credential-provider-node": "^3.105.0",
+    "@aws-sdk/protocol-http": "^3.78.0",
+    "@aws-sdk/signature-v4": "^3.78.0",
+    "query-string": "^7.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
